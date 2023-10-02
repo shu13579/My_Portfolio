@@ -1,0 +1,30 @@
+/* CSS */
+
+/* タブ（リンク）のスタイリング */
+.nav-link {
+  border: 1px solid #ccc;
+  border-right: none; /* 右の境界線を削除 */
+  padding: 10px;
+  text-decoration: none;
+  color: black;
+}
+
+
+/* 余分なマージン、パディング、リストスタイル（点）を削除 */
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+/* 最後のタブだけは右の境界線を追加 */
+.nav-link:last-child {
+  border-right: 1px solid #ccc;
+}
+
+.nav-link:hover {
+  border-color: #007bff;
+  background-color: #c1af9a;
+}
+
