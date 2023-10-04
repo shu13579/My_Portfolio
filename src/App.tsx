@@ -7,31 +7,22 @@ import {
   Switch,
   Link,
 } from 'react-router-dom';
+import Header from './components/Header';
+import Home from './pages/Home';
+import About from './pages/About';
+import Contact from './pages/Contact';
 
-const Home = () => <div>Home Page</div>;
-const About = () => <div>About Page</div>;
 const NotFound = () => <div>404 Not Found</div>;
 function App() {
   return (
     <Router>
-      <div>
-        <nav>
-          <ul>
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/about">About</Link>
-            </li>
-          </ul>
-        </nav>
-
-        <Switch>
-          <Route path="/" exact component={Home} />
-          <Route path="/about" component={About} />
-          <Route component={NotFound} />
-        </Switch>
-      </div>
+      <Header />
+      <Switch>
+        <Route path="/" exact component={Home} />
+        <Route path="/about" component={About} />
+        <Route path="/contact" component={Contact} />
+        <Route component={NotFound} />
+      </Switch>
     </Router>
   );
 }
