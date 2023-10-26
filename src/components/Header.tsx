@@ -13,6 +13,7 @@ const Header: React.FC = () => {
         <ul style={{ display: 'flex', gap: '15px' }}>
           <li><Link to="/" className="nav-link">Home</Link></li>
           <li><Link to="/about" className="nav-link">About</Link></li>
+          <li><Link to="/skillset" className="nav-link">SkillSet</Link></li>
           <li><Link to="/contact" className="nav-link">Contact</Link></li>
         </ul>
       </nav>

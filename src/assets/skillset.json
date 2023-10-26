@@ -1,0 +1,7 @@
+[
+  {"name": "Python", "stars": 5},
+  {"name": "JavaScript", "stars": 4},
+  {"name": "SQL", "stars": 3},
+  {"name": "Java", "stars": 4},
+  {"name": "C++", "stars": 2}
+]
