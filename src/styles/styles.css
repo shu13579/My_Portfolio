@@ -46,3 +46,16 @@ ul {
 .contact-link:hover {
   text-decoration: underline;
 }
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: white; /* 好みの色に設定できます */
+  z-index: 1000; /* 他の要素の上に表示されるようにするため */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* 視認性を高めるためにオプションで追加 */
+}
+
+body {
+  padding-top: 120px; /* ヘッダーの高さに応じてこの値を調整してください */
+}

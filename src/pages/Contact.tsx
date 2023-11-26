@@ -4,13 +4,15 @@ import 'font-awesome/css/font-awesome.min.css';
 
 const Contact: React.FC = () => {
   return (
-    <div className="contact-container">
-      <h1 className="contact-heading">Contact</h1>
+    <div>
       <p>Email: ---@--.jp</p>
       <p>Phone: --- --- ----</p>
 
-      <a className="contact-link" href="https://www.instagram.com/_shu.25/" target="_blank" rel="noopener noreferrer">
+      <a className="contact-link" href="https://www.instagram.com/_shu.25/" target="_blank" >
         <i className="fa fa-instagram"></i> Instagram
+      </a>
+      <a>
+        <i className="fa fa-twitter"></i> Twitter
       </a>
       <a className="contact-link" href="https://github.com/shu13579" target="_blank" rel="noopener noreferrer">
         <i className="fa fa-github"></i> Github

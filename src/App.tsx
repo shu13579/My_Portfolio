@@ -7,9 +7,11 @@ import Home from './pages/Home';
 import About from './pages/About';
 import SkillSet from './pages/SkillSet';
 import Contact from './pages/Contact';
+import Test from './pages/Test';
 
 const NotFound = () => <div>404 Not Found</div>;
 function App() {
+  console.log("Parent component mounted");
   return (
     <Router>
       <Header />
@@ -18,6 +20,7 @@ function App() {
         <Route path="/about" component={About} />
         <Route path="/skillset" component={SkillSet} />
         <Route path="/contact" component={Contact} />
+        <Route path="/test" component={Test} />
         <Route component={NotFound} />
       </Switch>
       <Footer />
