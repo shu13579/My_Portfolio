@@ -10,7 +10,7 @@ const Header: React.FC = () => {
         <img src={logo} alt="Logo" height="100" style={{ marginLeft: '10px', marginTop: '10px' }} />
       </div>
       <nav>
-        <ul style={{ display: 'flex', gap: '15px' }}>
+        <ul style={{ display: 'flex'}}>
           <li><Link to="/" className="nav-link">Home</Link></li>
           <li><Link to="/about" className="nav-link">About</Link></li>
           <li><Link to="/skillset" className="nav-link">SkillSet</Link></li>
