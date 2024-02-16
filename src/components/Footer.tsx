@@ -5,18 +5,9 @@ import '../styles/styles.css';
 
 const Footer: React.FC = () => {
   return (
-    <div className="contact-container">
-      <p>Email: ---@--.jp</p>
-      <p>Phone: --- --- ----</p>
-
-      <a className="contact-link" href="https://www.instagram.com/_shu.25/" target="_blank" rel="noopener noreferrer">
-        <i className="fa fa-instagram"></i> Instagram
-      </a>
-      <a className="contact-link" href="https://github.com/shu13579" target="_blank" rel="noopener noreferrer">
-        <i className="fa fa-github"></i> Github
-      </a>
-      {/* お問い合わせフォーム、地図、FAQなど他の要素を追加 */}
-    </div>
+    <footer>
+      <p className="thinking-text">Footerは何を書くか考え中です<span className="dots">...</span></p>
+    </footer>
   );
 };
 
