@@ -5,16 +5,13 @@ import React, { useEffect, useState } from 'react';
 const Test: React.FC = () => {
   return(
     <div>
-      <h1>テストページ</h1>
-      <div>
-        <h1>test</h1>
-          <div>
-          <h1>test</h1>
-          </div>
-      </div>
-        <h2>test</h2>
-
-
+      <h1>ここはテストページです。</h1>
+      <section>
+        これから実装したい機能やレイアウトを試します。
+      </section>
+      <section>
+        毎日何かしらの進捗を生んでいきたい。
+      </section>
     </div>
   );
 };
