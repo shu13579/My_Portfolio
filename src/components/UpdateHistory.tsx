@@ -8,6 +8,7 @@ type Update = {
 
 const UpdateHistory: React.FC = () => {
   const updates: Update[] = [
+    { date: '2024-02-16', description: 'ウェブサイトを更新しました' },
     { date: '2023-11-29', description: 'Github Pagesで公開しました。' },
     { date: '2023-11-17', description: '機能を追加しました。' },
     { date: '2023-10-06', description: 'ウェブサイトの作成を開始しました。' }
