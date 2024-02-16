@@ -1,21 +1,21 @@
 import React from 'react';
 import '../styles/styles.css';
 import 'font-awesome/css/font-awesome.min.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faXTwitter, faInstagram, faGithub } from '@fortawesome/free-brands-svg-icons';
+
 
 const Contact: React.FC = () => {
   return (
     <div>
-      <p>Email: ---@--.jp</p>
-      <p>Phone: --- --- ----</p>
-
       <a className="contact-link" href="https://www.instagram.com/_shu.25/" target="_blank" >
-        <i className="fa fa-instagram"></i> Instagram
+        <FontAwesomeIcon icon={faInstagram} /> Instagram
       </a>
-      <a>
-        <i className="fa fa-twitter"></i> Twitter
+      <a className="contact-link" href="https://twitter.com/sHu_11_25" target="_blank" rel="noopener noreferrer">
+        <FontAwesomeIcon icon={faXTwitter} />X(Twitter)
       </a>
       <a className="contact-link" href="https://github.com/shu13579" target="_blank" rel="noopener noreferrer">
-        <i className="fa fa-github"></i> Github
+        <FontAwesomeIcon icon={faGithub} />Github
       </a>
       {/* お問い合わせフォーム、地図、FAQなど他の要素を追加 */}
     </div>
