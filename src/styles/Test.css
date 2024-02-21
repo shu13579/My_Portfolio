@@ -1,0 +1,49 @@
+.container {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  color: #333;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.section {
+  display: grid;
+  grid-gap: 20px;
+}
+
+.sectionDiv {
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.sectionH2 {
+  color: #5cb85c;
+  margin-bottom: 10px;
+}
+
+.sectionP {
+  margin: 0;
+  color: #555;
+}
+
+/* レスポンシブ対応 */
+@media (max-width: 600px) {
+  .container {
+    padding: 10px;
+  }
+
+  .sectionDiv {
+    padding: 10px;
+  }
+}
