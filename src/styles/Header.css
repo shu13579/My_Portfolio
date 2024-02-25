@@ -1,0 +1,75 @@
+/* ヘッダー全体のスタイリング */
+header {
+  position: fixed; /* ヘッダーを上部に固定 */
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #333; /* ダークな背景色 */
+  color: white;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+/* ロゴのスタイリング */
+header img {
+  border-radius: 50%; /* 丸い形状 */
+  border: 2px solid white; /* 白い境界線 */
+  height: 80px; /* 高さの設定 */
+  width: auto; /* 幅は自動調整 */
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+/* ナビゲーションリンクのスタイリング */
+.nav-link {
+  color: white;
+  padding: 10px 15px;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s;
+  border-radius: 5px; /* 角の丸み */
+}
+
+.nav-link:hover {
+  background-color: #007bff; /* ホバー時の背景色 */
+  color: white;
+}
+
+header ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+header li {
+  margin: 0 10px;
+}
+
+/* レスポンシブ対応 */
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  header ul {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  header li {
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav-link {
+    width: 100%;
+    text-align: center;
+  }
+}
