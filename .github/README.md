@@ -2,4 +2,4 @@
 
 私のポートフォリオサイトです。
 
-アクセスは[こちら](https://shu13579.github.io/)
+アクセスはhttps://shu13579.github.io/My_Portfolio/
