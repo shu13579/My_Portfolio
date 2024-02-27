@@ -8,11 +8,13 @@ type Skill = {
 
 const SkillSet: React.FC = () => {
   const initialSkills: Skill[] = [
-    { name: 'Python', stars: 3 },
-    { name: 'TypeScript', stars: 2 },
-    { name: 'Ruby', stars: 2 },
-    { name: 'Java', stars: 1 },
-    { name: 'C++', stars: 1 },
+    { name: 'Python:', stars: 3 },
+    { name: 'JavaScript:', stars: 3 },
+    { name: 'TypeScript:', stars: 2 },
+    { name: 'Ruby:', stars: 3 },
+    { name: 'Java:', stars: 1 },
+    { name: 'C:', stars: 1 },
+    { name: 'R:', stars: 1 },
   ];
 
   const [skills, setSkills] = useState<Skill[]>(initialSkills);
@@ -41,6 +43,13 @@ const SkillSet: React.FC = () => {
           </div>
         ))}
       </div>
+      <div className="star-meaning">
+        <h3>⭐の意味</h3>
+        <p>⭐: 大学の講義・演習で触れたことがある</p>
+        <p>⭐⭐: 趣味での実践経験、個人での学習</p>
+        <p>⭐⭐⭐: プロジェクトでの実務経験</p>
+        {/* 必要に応じて、さらに説明を追加 */}
+    </div>
     </div>
   );
 };

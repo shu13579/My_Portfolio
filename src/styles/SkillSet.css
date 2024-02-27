@@ -103,3 +103,21 @@
     margin-left: 0;
   }
 }
+
+.star-meaning {
+  padding: 20px;
+  margin-top: 20px; /* 上部に余白を追加 */
+  background-color: #f0f0f0; /* 背景色 */
+  border-radius: 10px; /* 角を丸くする */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 影を追加 */
+}
+
+.star-meaning h3 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.star-meaning p {
+  margin-bottom: 5px;
+  color: #555;
+}
