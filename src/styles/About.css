@@ -1,0 +1,36 @@
+/* About.css */
+.about {
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.about h1 {
+  color: #007bff;
+  font-size: 2.5em;
+  margin-bottom: 0.5em;
+}
+
+.about h2 {
+  color: #0066cc;
+  font-size: 1.8em;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+}
+
+.about p {
+  margin: 0.75em 0;
+}
+
+.about a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.about a:hover {
+  text-decoration: underline;
+}
