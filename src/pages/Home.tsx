@@ -1,6 +1,7 @@
 import React from 'react';
 import '../styles/Home.css';  // スタイリング用の CSS ファイル
 import UpdateHistory from '../components/UpdateHistory';
+import Education from '../components/Education';
 // JSON ファイルからデータをインポート（本来は非同期処理で行う）
 // import homeData from './homeData.json';
 
@@ -24,6 +25,7 @@ const Home: React.FC = () => {
         ))}
       </ul>
       {/* 更新履歴を追加 */}
+      <Education /> {/* 学歴セクションを追加 */}
       <UpdateHistory />
       <div className="home-links">
 
