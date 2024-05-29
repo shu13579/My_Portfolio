@@ -1,6 +1,6 @@
 import React from 'react';
 import '../styles/styles.css';
-import 'font-awesome/css/font-awesome.min.css';
+//import 'font-awesome/css/font-awesome.min.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faXTwitter, faInstagram, faGithub } from '@fortawesome/free-brands-svg-icons';
 
