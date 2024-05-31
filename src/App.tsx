@@ -1,6 +1,6 @@
 //import React from 'react';
 import './App.css';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
 
 import Header from './components/Header';
 import Footer from './components/Footer';
@@ -23,6 +23,7 @@ function App() {
         <Route path="/skillset" element={<SkillSet />} />
         <Route path="/test" element={<Test />} />
         <Route path="/update-history" element={<UpdateHistory />} />
+        <Route path="/*" element={<Navigate to="/" replace />} />
       </Routes>
       <Footer />
     </Router>
