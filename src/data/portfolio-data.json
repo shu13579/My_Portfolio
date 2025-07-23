@@ -61,10 +61,11 @@
       "demo": "https://shu13579-jusho-eiyaku.vercel.app"
     },
     {
-      "title": "WhoPaid", 
-      "description": "誰からお金をもらったか忘れない！割り勘・立て替えの支払い管理アプリ",
-      "image": "https://via.placeholder.com/400x250/764ba2/ffffff?text=Project+2",
-      "technologies": ["Node.js", "TypeScript", "Tailwind CSS"],
+      "title": "WhoPaid",
+      "description": "飲み会・パーティーの立て替えで「誰からお金をもらったっけ？」を解決。ワンクリック支払い記録でリアルタイム管理できる割り勘・支払い管理Webアプリ。",
+      "image": "https://via.placeholder.com/400x250/10b981/ffffff?text=WhoPaid",
+      "technologies": ["Next.js 15.4", "React 19.1", "TypeScript", "Tailwind CSS", "localStorage", "React Hook Form"],
+      "github": "https://github.com/shu13579/WhoPaid",
       "demo": "https://who-paid-wine.vercel.app"
     },
     {

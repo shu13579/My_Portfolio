@@ -25,12 +25,12 @@ const Education = () => {
     },
     {
       date: "2024年4月",
-      institution: "東京工業大学大学院情報理工学院情報工学系知能情報コース",
+      institution: "東京科学大学大学院情報理工学院情報工学系知能情報コース",
       description: "修士課程 入学"
     },
     {
       date: "2026年3月",
-      institution: "東京工業大学大学院情報理工学院情報工学系知能情報コース",
+      institution: "東京科学大学大学院情報理工学院情報工学系知能情報コース",
       description: "修士課程 修了予定"
     }
   ];
