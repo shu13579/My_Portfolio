@@ -15,7 +15,7 @@
       "SASS",
       "Git"
     ],
-    "profileImage": "static/media/my_face.9dedfb50a32ff6652d75.JPG"
+    "profileImage": "/images/profile.jpg"
   },
   "experiences": [
     {
@@ -41,13 +41,13 @@
   "education": [
     {
       "school": "東京科学大学",
-      "degree": "情報理工学院 情報工学系 知能情報コース",
+      "degree": "大学院 情報理工学院 情報工学系 知能情報コース",
       "period": "2024年4月 - 2026年3月",
-      "description": "コンピュータサイエンス、データ構造とアルゴリズム、Web開発技術を学習"
+      "description": "山田研究室所属 - 機械学習・深層学習を用いた自然言語処理の研究"
     },
     {
       "school": "東京工業大学",
-      "degree": "情報理工学院 情報工学系",
+      "degree": "学部 情報理工学院 情報工学系",
       "period": "2020年4月 - 2024年3月",
       "description": "コンピュータサイエンス、データ構造とアルゴリズム、Web開発技術を学習"
     }

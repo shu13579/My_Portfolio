@@ -9,7 +9,11 @@ import {
   faEnvelope, 
   faExternalLinkAlt, 
   faGraduationCap, 
-  faBriefcase 
+  faBriefcase,
+  faMoon,
+  faSun,
+  faBars,
+  faTimes
 } from '@fortawesome/free-solid-svg-icons';
 import portfolioData from '../data/portfolio-data.json';
 import './Portfolio.css';
@@ -63,6 +67,8 @@ interface PortfolioData {
 
 const Portfolio: React.FC = () => {
   const [activeSection, setActiveSection] = useState('hero');
+  const [isDarkMode, setIsDarkMode] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const data = portfolioData as PortfolioData;
 
   // FontAwesome アイコンマッピング
@@ -81,10 +87,39 @@ const Portfolio: React.FC = () => {
   const experiences: Experience[] = data.experiences;
   const education: Education[] = data.education;
 
+  // ダークモード初期化
+  useEffect(() => {
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme === 'dark') {
+      setIsDarkMode(true);
+      document.documentElement.classList.add('dark');
+    }
+  }, []);
+
+  // ダークモード切り替え
+  const toggleDarkMode = () => {
+    setIsDarkMode(!isDarkMode);
+    if (!isDarkMode) {
+      document.documentElement.classList.add('dark');
+      localStorage.setItem('theme', 'dark');
+    } else {
+      document.documentElement.classList.remove('dark');
+      localStorage.setItem('theme', 'light');
+    }
+  };
+
   useEffect(() => {
     const handleScroll = () => {
       const sections = ['hero', 'about', 'experience', 'projects', 'contact'];
       const scrollPosition = window.scrollY + 100;
+      const windowHeight = window.innerHeight;
+      const documentHeight = document.documentElement.scrollHeight;
+      
+      // ページの最下部に到達した場合はcontactを選択
+      if (window.scrollY + windowHeight >= documentHeight - 10) {
+        setActiveSection('contact');
+        return;
+      }
 
       for (const section of sections) {
         const element = document.getElementById(section);
@@ -109,6 +144,7 @@ const Portfolio: React.FC = () => {
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
     }
+    setIsMobileMenuOpen(false);
   };
 
   return (
@@ -117,7 +153,9 @@ const Portfolio: React.FC = () => {
       <nav className="nav">
         <div className="nav-container">
           <div className="nav-logo">Portfolio</div>
-          <ul className="nav-menu">
+          
+          {/* Desktop Menu */}
+          <ul className={`nav-menu ${isMobileMenuOpen ? 'nav-menu-open' : ''}`}>
             {['hero', 'about', 'experience', 'projects', 'contact'].map((section) => (
               <li key={section} className="nav-item">
                 <button
@@ -132,6 +170,25 @@ const Portfolio: React.FC = () => {
               </li>
             ))}
           </ul>
+
+          {/* Controls */}
+          <div className="nav-controls">
+            <button 
+              className="theme-toggle"
+              onClick={toggleDarkMode}
+              aria-label="Toggle dark mode"
+            >
+              <FontAwesomeIcon icon={isDarkMode ? faSun : faMoon} />
+            </button>
+            
+            <button 
+              className="mobile-menu-toggle"
+              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+              aria-label="Toggle mobile menu"
+            >
+              <FontAwesomeIcon icon={isMobileMenuOpen ? faTimes : faBars} />
+            </button>
+          </div>
         </div>
       </nav>
 
