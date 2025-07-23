@@ -1,0 +1,118 @@
+{
+  "personal": {
+    "name": "卜部 柊人",
+    "title": "エンジニア",
+    "description": "東京科学大学の修士2年生です。情報工学を専攻しています。",
+    "aboutDescription": "生成AIを活用したプロダクトに興味を持っています。常に新しい技術にアンテナを張り、身近な人の困った体験をもとにアプリケーションを開発しています。",
+    "skills": [
+      "React",
+      "TypeScript", 
+      "Vue.js",
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "CSS3",
+      "SASS",
+      "Git"
+    ],
+    "profileImage": "static/media/my_face.9dedfb50a32ff6652d75.JPG"
+  },
+  "experiences": [
+    {
+      "title": "インターン",
+      "company": "株式会社アンド・ディ",
+      "period": "2023年5月 - 現在",
+      "description": [
+        "マーケティングリサーチにおける生成AIの活用",
+        "自治体の地域防災計画の更新自動化ツール",
+        "Git/GitHubを使用したチーム開発"
+      ]
+    },
+    {
+      "title": "インターン",
+      "company": "LINEヤフー株式会社",
+      "period": "2024年8月 - 2024年8月",
+      "description": [
+        "Yahoo!ニュースの機能改善",
+        "Git/GitHubを使用したチーム開発"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "school": "東京科学大学",
+      "degree": "情報理工学院 情報工学系 知能情報コース",
+      "period": "2024年4月 - 2026年3月",
+      "description": "コンピュータサイエンス、データ構造とアルゴリズム、Web開発技術を学習"
+    },
+    {
+      "school": "東京工業大学",
+      "degree": "情報理工学院 情報工学系",
+      "period": "2020年4月 - 2024年3月",
+      "description": "コンピュータサイエンス、データ構造とアルゴリズム、Web開発技術を学習"
+    }
+  ],
+  "projects": [
+    {
+      "title": "住所英訳くん",
+      "description": "React/TypeScriptを使用したモダンなWebアプリケーション。レスポンシブデザインと高速なパフォーマンスを実現。",
+      "image": "https://via.placeholder.com/400x250/667eea/ffffff?text=Project+1",
+      "technologies": ["React", "TypeScript", "CSS3"],
+      "demo": "https://shu13579-jusho-eiyaku.vercel.app"
+    },
+    {
+      "title": "WhoPaid", 
+      "description": "誰からお金をもらったか忘れない！割り勘・立て替えの支払い管理アプリ",
+      "image": "https://via.placeholder.com/400x250/764ba2/ffffff?text=Project+2",
+      "technologies": ["Node.js", "TypeScript", "Tailwind CSS"],
+      "demo": "https://who-paid-wine.vercel.app"
+    },
+    {
+      "title": "othello-app",
+      "description": "Simple Othello game",
+      "image": "https://via.placeholder.com/400x250/9f4ea2/ffffff?text=Project+3", 
+      "technologies": ["HTML", "CSS", "JavaScript"],
+      "demo": "https://shu13579.github.io/othello-app/"
+    },
+    {
+      "title": "プロジェクト 4",
+      "description": "Next.jsとTailwind CSSを使用したモダンなブログシステム。MDXサポートと静的サイト生成。",
+      "image": "https://via.placeholder.com/400x250/4a90e2/ffffff?text=Project+4",
+      "technologies": ["Next.js", "Tailwind CSS", "MDX"],
+      "github": "https://github.com/username/project4",
+      "demo": "https://project4-demo.com"
+    },
+    {
+      "title": "プロジェクト 5",
+      "description": "GraphQLとApolloを使用したリアルタイムチャットアプリ。WebSocketによる即座のメッセージ配信。",
+      "image": "https://via.placeholder.com/400x250/e74c3c/ffffff?text=Project+5",
+      "technologies": ["GraphQL", "Apollo", "WebSocket"],
+      "github": "https://github.com/username/project5"
+    }
+  ],
+  "contact": {
+    "description": "お仕事のご依頼やご相談がございましたら、お気軽にご連絡ください。",
+    "socialLinks": [
+      {
+        "name": "Email",
+        "icon": "faEnvelope",
+        "url": "mailto:your.email@example.com"
+      },
+      {
+        "name": "GitHub",
+        "icon": "faGithub",
+        "url": "https://github.com/username"
+      },
+      {
+        "name": "Twitter",
+        "icon": "faTwitter",
+        "url": "https://twitter.com/username"
+      },
+      {
+        "name": "LinkedIn",
+        "icon": "faLinkedin",
+        "url": "https://linkedin.com/in/username"
+      }
+    ]
+  }
+}
