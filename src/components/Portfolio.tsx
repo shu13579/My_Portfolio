@@ -178,7 +178,17 @@ const Portfolio: React.FC = () => {
               onClick={toggleDarkMode}
               aria-label="Toggle dark mode"
             >
-              <FontAwesomeIcon icon={isDarkMode ? faSun : faMoon} />
+              <FontAwesomeIcon 
+                icon={faSun} 
+                className="theme-toggle-icon theme-toggle-sun" 
+              />
+              <div className="theme-toggle-slider">
+                <FontAwesomeIcon icon={isDarkMode ? faMoon : faSun} />
+              </div>
+              <FontAwesomeIcon 
+                icon={faMoon} 
+                className="theme-toggle-icon theme-toggle-moon" 
+              />
             </button>
             
             <button 
